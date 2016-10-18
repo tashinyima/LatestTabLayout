@@ -17,8 +17,12 @@
          android:id="@+id/imageLogo"
          android:layout_width="70dp"
          android:layout_height="50dp"
-         android:src="@drawable/visaLogo" />
+         android:src="@drawable/app_logo"/>
+
+
+
 
  </com.balysv.materialripple.MaterialRippleLayout>
+
 
 </android.support.v7.widget.Toolbar>

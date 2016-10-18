@@ -26,6 +26,7 @@
         android:background="@color/colorTabLayout"
         app:tabMode="fixed"
         app:tabGravity="fill"
+        app:tabTextColor="@color/colorWhite"
         >
 
 
