@@ -1,5 +1,7 @@
 package com.netforceinfotech.tablayout;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -7,14 +9,16 @@ import android.support.v7.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
-  /* *************
-   Global Variable and every method in the MainActivity can access it
-
-
+  /**************
+   * Global Variable and every method in the MainActivity can access it
+   *
+   *
    */
 
-
     Toolbar toolBar;
+    TabLayout tabLayout;
+    ViewPager viewPager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +38,16 @@ public class MainActivity extends AppCompatActivity {
          * Create Variable for the toolBar
          * set the variable for the Support Action Bar
          *
+         * Create TabLayout and ViewPager Variables and initialise them
          */
 
          toolBar = (Toolbar) findViewById(R.id.toolBar);
          setSupportActionBar(toolBar);
+
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+
+
 
 
 

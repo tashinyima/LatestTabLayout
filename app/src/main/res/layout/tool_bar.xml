@@ -8,5 +8,17 @@
     android:id="@+id/toolBar"
     app:layout_scrollFlags="scroll|enterAlways">
 
+ <com.balysv.materialripple.MaterialRippleLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/materialRipple">
+
+     <ImageView
+         android:id="@+id/imageLogo"
+         android:layout_width="70dp"
+         android:layout_height="50dp"
+         android:src="@drawable/visaLogo" />
+
+ </com.balysv.materialripple.MaterialRippleLayout>
 
 </android.support.v7.widget.Toolbar>
