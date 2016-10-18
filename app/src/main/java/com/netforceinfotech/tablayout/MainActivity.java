@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolBar;
     TabLayout tabLayout;
     ViewPager viewPager;
+    ViewPagerAdapter viewPagerAdapter;
 
 
     @Override
@@ -42,12 +43,19 @@ public class MainActivity extends AppCompatActivity {
 
          toolBar = (Toolbar) findViewById(R.id.toolBar);
          setSupportActionBar(toolBar);
+         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
+        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-
+        viewPagerAdapter.addFragments( new HomeFragment(),"Home");
+        viewPagerAdapter.addFragments( new TopFreeFragment(),"Top Free");
+        viewPagerAdapter.addFragments( new TopPaidFragment(),"To Paid");
+        viewPager.setAdapter(viewPagerAdapter);
+        tabLayout.setupWithViewPager(viewPager);
 
 
 

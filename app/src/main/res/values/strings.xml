@@ -2,5 +2,11 @@
     <string name="app_name">TaBLayOut</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Home fragment</string>
+    <string name="top_free_fragment">Top Free fragment</string>
+    <string name="top_paid_fragment">Top Paid fragment</string>
+    <string name="download_fragment">Download fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--create a navigational Menu -->
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/profile_id"
+            android:title="Profile"
+            android:icon="@drawable/profile_icon"
+            >
+        </item>
+        <item
+            android:id="@+id/gallery_id"
+            android:title="Gallery"
+            android:icon="@drawable/gallery_icon"
+            >
+        </item>
+        <item
+            android:id="@+id/video_id"
+            android:title="Video"
+            android:icon="@drawable/video_icon"
+            >
+        </item>
+
+    </group>
+<!--Create menu with sub item-->
+    <item android:title="Social">
+
+        <menu>
+
+            <item
+                android:id="@+id/add_to_group_id"
+                android:title="Add to Group"
+                android:icon="@drawable/add_to_group_icon">
+            </item>
+
+            <item
+                android:id="@+id/groups_id"
+                android:title="Groups"
+                android:icon="@drawable/group_icon">
+            </item>
+
+            <item
+                android:id="@+id/share_id"
+                android:title="Share"
+                android:icon="@drawable/share_icon">
+            </item>
+
+        </menu>
+    </item>
+
+
+    <item android:title="Account">
+
+    <menu>
+      <item
+          android:id="@+id/account_icon"
+          android:title="Account"
+          android:icon="@drawable/account_icon">
+      </item>
+
+        <item
+            android:id="@+id/setting_icon"
+            android:title="Setting"
+            android:icon="@drawable/settings_icon">
+        </item>
+        <item
+            android:id="@+id/logout_icon"
+            android:title="Logout"
+            android:icon="@drawable/logout_icon">
+        </item>
+
+    </menu>
+    </item>
+
+
+</menu>
